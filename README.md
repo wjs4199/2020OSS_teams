@@ -6,15 +6,15 @@
 
 [함수 종류]
 1. selectMenu (메뉴판 보여주기)
-2. create
-3. read (한줄, 리스트)
-4. update
-5. delete
-6. save
-7. load
+2. createProduct
+3. readProduct(한줄), listProduct(리스트)
+4. updateProduct
+5. deleteProduct
+6. saveData
+7. loadData
 8. selectDataNo(원하는 번호입력)
-9. searchName(이름 검색함수)
-10. 추가적인 검색기능.(이름검색, 가격검색, 별점 검색)
+9. searchFunction(검색기능 메뉴 보여주기)
+10.searchName, searchPrice, searchStar(이름검색, 가격검색, 별점 검색)
 
 - 메뉴 구성은 총 7가지로 제품조회, 추가, 수정, 삭제, 파일저장, 추가검색, 종료로 이루어진다. 
 - 파일 조회시 파일로부터 로딩된 것이 있다면 그 파일의 내용과 더불어 사용자가 추가한 제품들을 리스트로 보여준다.
