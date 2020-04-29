@@ -17,6 +17,30 @@
 9. searchName(이름 검색함수)
 10. 추가적인 검색기능.(이름검색, 가격검색, 별점 검색)
 
+[함수정의]
+- 구조체정의
+ typedef struct{
+    char name[30];
+    int cost;
+    int page;
+    int star;
+} Book;
+
+1. int selectMenu();
+2. int CreateBook(Book *b);
+3. void readBook(Book b);
+   void listBook(Book *b, int count);
+4. int updateBook(Book *b);
+5. int deleteBook(Book *b);
+6. void saveData(Book* b, int count);
+7. int loadData(Book* b);
+8. int selectDataNo(Book* b, int count);
+9. void searchFunction(Book* b, int count)
+   void searchName(Book* b, int count);
+   void searchPrice(Book* b, int count);
+   void searchStar(Book* b, int count);
+
+
 - 메뉴 구성은 총 7가지로 제품조회, 추가, 수정, 삭제, 파일저장, 추가검색, 종료로 이루어진다. 
 - 파일 조회시 파일로부터 로딩된 것이 있다면 그 파일의 내용과 더불어 사용자가 추가한 제품들을 리스트로 보여준다.
 - 제품 추가, 수정, 삭제 메뉴를 선택함으로써 제품을 추가하고, 원하는 제품의 번호를 선택하여 수정 및 삭제할 수 있다.
@@ -26,7 +50,7 @@
 3. 팀소개 및 팀원이 맡은 역할
 
 [팀소개]
--팀원: 21800647 전예은 21900441연예진
+-팀원: 21800647 전예은, 21900441 연예진
 -팀특징: 속전속결!! 호흡척척!!
 
 [팀원이 맡은 역할]
