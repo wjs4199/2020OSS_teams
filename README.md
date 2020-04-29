@@ -18,8 +18,8 @@
 10. 추가적인 검색기능.(이름검색, 가격검색, 별점 검색)
 
 [함수정의]
--구조체정의
-typedef struct{
+- 구조체정의
+ typedef struct{
     char name[30];
     int cost;
     int page;
