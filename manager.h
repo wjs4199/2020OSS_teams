@@ -13,6 +13,9 @@ FILE *fp;
 //loadData(Book* b, int count)
 int loadcount;
 
+//selectDataNo(Book*b, int count)
+int no;
+
 //void searchName(Product*p, int count)
 int scount; //데이터의 존재유무 가리는 변수
 char search[20]; //사용자가 검색할 제품명
@@ -28,6 +31,8 @@ int starnum;//사용자가 원하는ㄴ 평점
 void saveData(Book* b, int count);
 //파일데이터 가져오는 함수
 int loadData(Book* b, int count);
+//원하는 번호 선택하는 함수
+int selectDataNo(Book* b, int count);
 //검색기능을 하는 함수
 void searchFunction(Book* b,int count);
 //책 이름 검색 기능하는 함수

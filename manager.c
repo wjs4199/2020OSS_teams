@@ -35,6 +35,13 @@ int loadData(Book* b){
   return loadcount;
 }
 
+//사용자가 원하는번호를 입력하는 함수
+int selectDataNo(Book* b, int count){
+  listBook(b,count);
+  printf("번호는 (취소 :0)? ");
+  scanf("%d",&no);
+  return no;
+}
 //책이름 검색 기능하는 함수
 void searchName(Book* b, int count){
   scount=0;
