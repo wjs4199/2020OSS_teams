@@ -30,7 +30,7 @@ int starnum;//사용자가 원하는ㄴ 평점
 //파일데이터 저장하는 함수
 void saveData(Book* b, int count);
 //파일데이터 가져오는 함수
-int loadData(Book* b, int count);
+int loadData(Book* b);
 //원하는 번호 선택하는 함수
 int selectDataNo(Book* b, int count);
 //검색기능을 하는 함수
