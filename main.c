@@ -16,7 +16,7 @@ int main(void){
 			else printf("데이터가 없습니다.\n");
 		}
 		else if (menu == 2){
-			count+=CreateBook(&b[curcount++]);
+			count+=createBook(&b[curcount++]);
 		}
 		else if (menu == 3){
 			int no=selectDataNo(b,curcount);

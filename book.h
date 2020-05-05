@@ -14,7 +14,7 @@ typedef struct{
 
 int selectMenu();
 
-int CreateBook(Book *b);
+int createBook(Book *b);
 void readBook(Book b);
 void listBook(Book *b, int count);
 int updateBook(Book *b);
