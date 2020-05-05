@@ -3,8 +3,6 @@
 #include <string.h>
 
 //main 함수
-int curcount;
-int count;
 int i, menu;
 
 //saveData(Book* b, int count)
@@ -16,6 +14,8 @@ int loadcount;
 //selectDataNo(Book*b, int count)
 int no;
 
+//void searchFunction(Book* b,int count)
+int searchnumber;
 //void searchName(Product*p, int count)
 int scount; //데이터의 존재유무 가리는 변수
 char search[20]; //사용자가 검색할 제품명

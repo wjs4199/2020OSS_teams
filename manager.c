@@ -32,7 +32,7 @@ int loadData(Book* b){
   }
   fclose(fp);
   printf("=> 로딩 성공!\n");
-  return loadcount;
+  return loadcount-1;
 }
 
 //사용자가 원하는번호를 입력하는 함수
@@ -94,9 +94,10 @@ void searchStar(Book* b,int count){
 //검색 기능을 하는 함수
 void searchFunction(Book* b,int count){
   printf("=== 검색기능 ===\n1. 제품명 검색\n2. 제품가격대 검색\n3. 제품평점 검색\n0. 취소\n");
-  no= selectDataNo(b, count);
-  if(no==1) searchName(b,count);
-  else if(no==2) searchPrice(b, count);
-  else if(no==3) searchStar(b, count);
-  else if(no==0) printf("취소되었습니다!");
+  printf("원하는 번호는?");
+  scanf("%d",&searchnumber);
+  if(searchnumber==1) searchName(b,count);
+  else if(searchnumber==2) searchPrice(b, count);
+  else if(searchnumber==3) searchStar(b, count);
+  else printf("취소되었습니다!");
 }
