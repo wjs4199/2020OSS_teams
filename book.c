@@ -8,17 +8,17 @@ int createBook(Book *b){
 	scanf("%d",&b->cost);
 	printf("페이지수는? ");
 	scanf("%d",&b->page);
-	printf("별점은?");
+	printf("별점은? ");
 	scanf("%d", &b->star);
 	return 1;
 }
 
 void readBook(Book b){
-	printf("%s %d %d %d \n", b.name, b.cost, b.page, b.star);
+	printf("%s  %5d원 p.%-3d %2d점 \n", b.name, b.cost, b.page, b.star);
 }
 
 void listBook(Book *b, int count){
-	printf("****************************\n");
+	printf("********************************************\n");
 	for(int i=0;i<count; i++){
 		if(b[i].cost==-1) continue;
 		printf("%2d ", i+1);
