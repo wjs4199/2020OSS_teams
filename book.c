@@ -22,7 +22,7 @@ void listBook(Book *b, int count){
 	for(int i=0;i<count; i++){
 		if(b[i]cost==-1) continue;
 		printf("%2d ", i+1);
-		readMenu(b[i]);
+		readBook(b[i]);
 	}
 	printf("\n");
 }
