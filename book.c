@@ -35,7 +35,7 @@ int updateBook(Book *b){
 	scanf("%d",&b->cost);
 	printf("새 페이지수는? ");
 	scanf("%d",&b->page);
-	prinf("새 별점은?");
+	printf("새 별점은?");
 	scanf("%d", &b->star);
 	return 1;
 }
