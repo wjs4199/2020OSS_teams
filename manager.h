@@ -3,8 +3,6 @@
 #include <string.h>
 
 //main 함수
-int curcount;
-int count;
 int i, menu;
 
 //saveData(Book* b, int count)
