@@ -1,6 +1,6 @@
 #include "book.h"
 
-int CreateBook(Book *b){
+int createBook(Book *b){
 	getchar();
 	printf("책제목은? ");
 	scanf("%[^\n]s",b->name);
