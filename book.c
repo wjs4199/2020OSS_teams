@@ -14,11 +14,17 @@ int createBook(Book *b){
 }
 
 void readBook(Book b){
-	printf("%s  %5d원 p.%-3d %2d점 \n", b.name, b.cost, b.page, b.star);
+	char s[]="★ ";	
+	//printf("%s  %5d원 p.%-3d %2d점 \n", b.name, b.cost, b.page, b.star);
+	printf("%s\n", b.name);
+	printf(" %d원 | p.%-3d | ",b.cost,b.page);
+	for(int i=0;i<b.star;i++)
+    		printf("%s",s);
+	printf("\n\n");
 }
 
 void listBook(Book *b, int count){
-	printf("********************************************\n");
+	printf("*******************************\n");
 	for(int i=0;i<count; i++){
 		if(b[i].cost==-1) continue;
 		printf("%2d ", i+1);
