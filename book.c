@@ -20,7 +20,7 @@ void readBook(Book b){
 void listBook(Book *b, int count){
 	printf("****************************\n");
 	for(int i=0;i<count; i++){
-		if(b[i]cost==-1) continue;
+		if(b[i].cost==-1) continue;
 		printf("%2d ", i+1);
 		readBook(b[i]);
 	}
