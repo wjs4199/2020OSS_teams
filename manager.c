@@ -43,7 +43,7 @@ int selectDataNo(Book* b, int count){
   return no;
 }
 //책이름 검색 기능하는 함수
-void searchName(Book* b, int count){
+/*void searchName(Book* b, int count){
   scount=0;
   printf("검색할 제품명? ");
   scanf("%s",search);
@@ -100,4 +100,4 @@ void searchFunction(Book* b,int count){
   else if(searchnumber==2) searchPrice(b, count);
   else if(searchnumber==3) searchStar(b, count);
   else printf("취소되었습니다!");
-}
+}*/
