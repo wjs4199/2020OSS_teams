@@ -60,7 +60,7 @@ int selectMenu(){
 	printf("3. 책수정\n");
 	printf("4. 책삭제\n");
 	printf("5. 파일저장\n");
-	//printf("6. 검색\n");
+	printf("6. 검색\n");
 	printf("0. 종료\n\n");
 	printf("=> 원하는 메뉴는? ");
 	scanf("%d", &menu);
