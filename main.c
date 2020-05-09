@@ -11,10 +11,6 @@ int main(void){
 	while (1){
 		menu = selectMenu();
 		if (menu == 0) break;
-			if(deleteok==1){
-				count = count - deleteBook(&b[no-1]);
-			}
-		}
 		else if(menu==5){
 			if(count==0) printf("데이터가 없습니다!\n");
 			else saveData(b,curcount);
