@@ -42,39 +42,6 @@ int selectDataNo(Book* b, int count){
   scanf("%d",&no);
   return no;
 }
-//책이름 검색 기능하는 함수
-/*void searchName(Book* b, int count){
-  scount=0;
-  printf("검색할 제품명? ");
-  scanf("%s",search);
-  for(int i=0;i<count;i++){
-    if(b[i].cost !=-1)
-      if(strstr(b[i].name, search)){
-        printf("%2d ",i+1);
-        readBook(b[i]);
-        scount++;
-      }
-  }
-  if(scount==0) printf("=> 검색된 데이터 없음!");
-  printf("\n");
-}
-//원하는 가격대의책을 찾아주는 함수
-void searchPrice(Book* b,int count){
-  scount=0;
-  printf("원하는 가격한도?( ~ ) :");
-  scanf("%d~%d",&search1,&search2);
-  for(int i=0;i<count;i++){
-    if(b[i].cost !=-1)
-      if(b[i].cost>=search1 && b[i].cost<=search2){
-        printf("%2d ",i+1);
-        readBook(b[i]);
-        scount++;
-      }
-  }
-  if(scount==0) printf("=> 검색된 데이터 없음!");
-  printf("\n");  
-}
-//원하는 평점 이상의 책을 찾아주는 함수
 void searchStar(Book* b,int count){
   scount=0;//데이터의 존재유무 가리는 변수
   printf("원하는 평점? (0~5)");
