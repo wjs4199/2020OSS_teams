@@ -11,13 +11,6 @@ int main(void){
 	while (1){
 		menu = selectMenu();
 		if (menu == 0) break;
-			int deleteok;// 삭제실행 여부
-			if(no==0){
-				printf("=> 취소됨!\n");
-				continue;
-			}
-			printf("정말로 삭제하시겠습니까 (삭제 :1)? ");
-			scanf("%d",&deleteok);
 			if(deleteok==1){
 				count = count - deleteBook(&b[no-1]);
 			}
