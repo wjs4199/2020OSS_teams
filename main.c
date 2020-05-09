@@ -10,10 +10,18 @@ int main(void){
 
 	while (1){
 		menu = selectMenu();
+		//0번메뉴 : 프로그램 종료
 		if (menu == 0) break;
+		
+		//5번메뉴 : saveData를 사용하여 파일저장
 		else if(menu==5){
 			if(count==0) printf("데이터가 없습니다!\n");
 			else saveData(b,curcount);
+		}
+
+		//6번메뉴 : serchFunction을 사용하여 book검색
+		else if(menu==6){
+			searchFunction(b, curcount);
 		}
 	}
 	printf("종료됨!\n");
