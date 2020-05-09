@@ -42,8 +42,3 @@ int selectDataNo(Book* b, int count){
   scanf("%d",&no);
   return no;
 }
-  if(searchnumber==1) searchName(b,count);
-  else if(searchnumber==2) searchPrice(b, count);
-  else if(searchnumber==3) searchStar(b, count);
-  else printf("취소되었습니다!");
-}*/
