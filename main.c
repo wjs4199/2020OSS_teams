@@ -11,19 +11,6 @@ int main(void){
 	while (1){
 		menu = selectMenu();
 		if (menu == 0) break;
-		if (menu == 1){
-			if(count>0) listBook(b, curcount);
-			else printf("데이터가 없습니다.\n");
-		}
-		else if (menu == 2){
-			count+=createBook(&b[curcount++]);
-		}
-		else if (menu == 3){
-			int no=selectDataNo(b,curcount);
-			if(no==0){
-				printf("취소됨!\n");
-				continue;
-			}
 			updateBook(&b[no-1]);
 		}
 		else if (menu == 4){
