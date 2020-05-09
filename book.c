@@ -1,5 +1,6 @@
 #include "book.h"
 
+//book을 생성해주는 함수 구현
 int createBook(Book *b){
 	getchar();
 	printf("책제목은? ");
@@ -13,6 +14,8 @@ int createBook(Book *b){
 	return 1;
 }
 
+//book을 출력해주는 함수 구현
+//별점수를 별모양 아이콘으로 구현
 void readBook(Book b){
 	char s[]="★ ";	
 	//printf("%s  %5d원 p.%-3d %2d점 \n", b.name, b.cost, b.page, b.star);
@@ -23,6 +26,7 @@ void readBook(Book b){
 	printf("\n\n");
 }
 
+//book의 목록 전체를 출력해주는 함수 구현
 void listBook(Book *b, int count){
 	printf("*******************************\n");
 	for(int i=0;i<count; i++){
@@ -33,6 +37,7 @@ void listBook(Book *b, int count){
 	printf("\n");
 }
 
+//book을 수정할 수 있는 함수 구현
 int updateBook(Book *b){
 	getchar();
 	printf("새 책제목은? ");
@@ -46,12 +51,15 @@ int updateBook(Book *b){
 	return 1;
 }
 
+//book을 지우는 함수 구현
 int deleteBook(Book *b){
 	b->cost=-1;
 	printf("=> 삭제됨!\n");
 	return 1;
 }
 
+//각 함수의 기능을 심행하기 위한 메뉴를 제공하는 함수 구현
+//1,2,3,4,5,6,0 번 메뉴 존재
 int selectMenu(){
 	int menu;
 	printf("\n*** Book Store ***\n");

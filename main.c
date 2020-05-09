@@ -10,14 +10,21 @@ int main(void){
 
 	while (1){
 		menu = selectMenu();
+		//0번메뉴 : 프로그램 종료
 		if (menu == 0) break;
+		
+		//1번메뉴 : listBook을 사용하여 book조회
 		if (menu == 1){
 			if(count>0) listBook(b, curcount);
 			else printf("데이터가 없습니다.\n");
 		}
+
+		//2번메뉴 : createBook을사용하여 book생성 
 		else if (menu == 2){
 			count+=createBook(&b[curcount++]);
 		}
+
+		//3번메뉴: updateBook을 사용하여 book수정
 		else if (menu == 3){
 			int no=selectDataNo(b,curcount);
 			if(no==0){
@@ -26,6 +33,8 @@ int main(void){
 			}
 			updateBook(&b[no-1]);
 		}
+
+		//4번메뉴 : deleteBook을 사용하여 book삭제
 		else if (menu == 4){
 			int no= selectDataNo(b,curcount);
 			int deleteok;// 삭제실행 여부
@@ -39,10 +48,14 @@ int main(void){
 				count = count - deleteBook(&b[no-1]);
 			}
 		}
+
+		//5번메뉴 : saveData를 사용하여 파일저장
 		else if(menu==5){
 			if(count==0) printf("데이터가 없습니다!\n");
 			else saveData(b,curcount);
 		}
+
+		//6번메뉴 : serchFunction을 사용하여 book검색
 		else if(menu==6){
 			searchFunction(b, curcount);
 		}
