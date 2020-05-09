@@ -11,10 +11,6 @@ int main(void){
 	while (1){
 		menu = selectMenu();
 		if (menu == 0) break;
-			updateBook(&b[no-1]);
-		}
-		else if (menu == 4){
-			int no= selectDataNo(b,curcount);
 			int deleteok;// 삭제실행 여부
 			if(no==0){
 				printf("=> 취소됨!\n");
