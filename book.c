@@ -17,8 +17,7 @@ int createBook(Book *b){
 //book을 출력해주는 함수 구현
 //별점수를 별모양 아이콘으로 구현
 void readBook(Book b){
-	char s[]="★ ";	
-	//printf("%s  %5d원 p.%-3d %2d점 \n", b.name, b.cost, b.page, b.star);
+	char s[]="★ ";
 	printf("%s\n", b.name);
 	printf(" %d원 | p.%-3d | ",b.cost,b.page);
 	for(int i=0;i<b.star;i++)
