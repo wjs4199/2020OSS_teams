@@ -22,7 +22,7 @@ int scount; //데이터의 존재유무 가리는 변수
 char search[20]; //사용자가 검색할 제품명
 
 //void searchPrice(Product*p,int count)
-//int search1, search2;//사용자가 원하는 최저가격대/ 원하는 최고가격대
+int search1, search2;//사용자가 원하는 최저가격대/ 원하는 최고가격대
 
 //void searchStar(Product*p,int count)
 //int starnum;//사용자가 원하는ㄴ 평점
