@@ -42,3 +42,21 @@ int selectDataNo(Book* b, int count){
   scanf("%d",&no);
   return no;
 }
+
+//책이름 검색 기능하는 함수
+void searchName(Book* b, int count){
+  scount=0;
+  printf("검색할 제품명? ");
+  scanf("%s",search);
+  for(int i=0;i<count;i++){
+    if(b[i].cost !=-1)
+      if(strstr(b[i].name, search)){
+        printf("%2d ",i+1);
+        readBook(b[i]);
+        scount++;
+      }
+  }
+  if(scount==0) printf("=> 검색된 데이터 없음!");
+  printf("\n");
+}
+
