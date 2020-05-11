@@ -12,6 +12,12 @@ int main(void){
 		menu = selectMenu();
 		//0번메뉴 : 프로그램 종료
 		if (menu == 0) break;
+
+		//1번메뉴 : listBook을 사용하여 book읽기
+		if (menu == 1){
+			if(count>0) listBook(b, curcount);
+			else printf("데이터가 없습니다.\n");
+		}
 		
 		//5번메뉴 : saveData를 사용하여 파일저장
 		else if(menu==5){
