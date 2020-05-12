@@ -95,8 +95,7 @@ void searchStar(Book* b,int count){
 
 //검색 기능을 하는 함수
 void searchFunction(Book* b,int count){
-  printf("=== 검색기능 ===\n1. 제품명 검색\n2. 제품가격대 검색\n3. 제품평점 검색
-\n0. 취소\n");
+  printf("=== 검색기능 ===\n1. 제품명 검색\n2. 제품가격대 검색\n3. 제품평점 검색\n0. 취소\n");
   printf("원하는 번호는?");
   scanf("%d",&searchnumber);
   if(searchnumber==1) searchName(b,count);
