@@ -33,6 +33,21 @@ int main(void){
 			}
 			updateBook(&b[no-1]);
 		}
+		
+		//4번메뉴 : deleteBook을 사용하여 book삭제
+		else if (menu == 4){
+			int no= selectDataNo(b,curcount);
+			int deleteok;// 삭제실행 여부
+			if(no==0){
+				printf("=> 취소됨!\n");
+				continue;
+			}
+			printf("정말로 삭제하시겠습니까 (삭제 :1)? ");
+			scanf("%d",&deleteok);
+			if(deleteok==1){
+				count = count - deleteBook(&b[no-1]);
+			}
+		}
 
 		//5번메뉴 : saveData를 사용하여 파일저장
 		else if(menu==5){
