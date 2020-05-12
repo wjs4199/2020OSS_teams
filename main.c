@@ -24,6 +24,16 @@ int main(void){
 			count+=createBook(&b[curcount++]);
 		}
 
+		//3번메뉴: updateBook을 사용하여 book수정
+		else if (menu == 3){
+			int no=selectDataNo(b,curcount);
+			if(no==0){
+				printf("취소됨!\n");
+				continue;
+			}
+			updateBook(&b[no-1]);
+		}
+
 		//5번메뉴 : saveData를 사용하여 파일저장
 		else if(menu==5){
 			if(count==0) printf("데이터가 없습니다!\n");
