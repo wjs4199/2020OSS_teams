@@ -19,6 +19,11 @@ int main(void){
 			else printf("데이터가 없습니다.\n");
 		}
 		
+		//2번메뉴 : createBook을사용하여 book생성 
+		else if (menu == 2){
+			count+=createBook(&b[curcount++]);
+		}
+
 		//5번메뉴 : saveData를 사용하여 파일저장
 		else if(menu==5){
 			if(count==0) printf("데이터가 없습니다!\n");
