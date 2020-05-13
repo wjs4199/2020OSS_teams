@@ -41,11 +41,11 @@ This is mini team project in OSS lecture.
 5. int deleteBook(Book *b);
 6. void saveData(Book* b, int count);
 7. int loadData(Book* b);
-8. int selectDataNo(Book* b, int count);
-9. void searchFunction(Book* b, int count)
-   void searchName(Book* b, int count);
-   void searchPrice(Book* b, int count);
-   void searchStar(Book* b, int count);
+8. int selectDataNo(Book* b, int count);  
+9. void searchFunction(Book* b, int count);  
+   void searchName(Book* b, int count);  
+   void searchPrice(Book* b, int count);  
+   void searchStar(Book* b, int count);  
 
 [메뉴 설명]
 - 메뉴 구성
