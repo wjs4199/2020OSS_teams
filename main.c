@@ -5,6 +5,7 @@
 int main(void){
 	Book b[100];// 데이터를 저장하는 구조체변수배열
 	int count=0, curcount=0;
+	
 	count=loadData(b);
 	curcount=count;
 
@@ -31,6 +32,7 @@ int main(void){
 				printf("취소됨!\n");
 				continue;
 			}
+
 			updateBook(&b[no-1]);
 		}
 		
@@ -42,8 +44,10 @@ int main(void){
 				printf("=> 취소됨!\n");
 				continue;
 			}
+
 			printf("정말로 삭제하시겠습니까 (삭제 :1)? ");
 			scanf("%d",&deleteok);
+
 			if(deleteok==1){
 				count = count - deleteBook(&b[no-1]);
 			}
