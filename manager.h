@@ -32,8 +32,10 @@ int starnum;//사용자가 원하는ㄴ 평점
 void saveData(Book* b, int count);
 //파일데이터 가져오는 함수
 int loadData(Book* b);
+
 //원하는 번호 선택하는 함수
 int selectDataNo(Book* b, int count);
+
 //검색기능을 하는 함수
 void searchFunction(Book* b,int count);
 //책 이름 검색 기능하는 함수
