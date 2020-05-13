@@ -25,12 +25,12 @@ This is mini team project in OSS lecture.
 10. 추가적인 검색기능.(이름검색, 가격검색, 별점 검색)
 
 [함수정의]
-- 구조체정의
- typedef struct{
-    char name[30];
-    int cost;
-    int page;
-    int star;
+- 구조체정의  
+ typedef struct{  
+    char name[30];  
+    int cost;  
+    int page;  
+    int star;  
 } Book;
 
 1. int selectMenu();
