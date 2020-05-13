@@ -1,16 +1,15 @@
-##2020OSS_teams
+2020OSS_teams
+===
 
-Welcome, read me first:)
-This is mini team project in OSS lecture.
+Welcome, read me first:)  
+This is mini team project in OSS lecture. 
 
-
-1. mini project 주제
+<dr>1. mini project 주제
 
 - 책 판매를 위한 프로그램을 구현
 - CRUD함수와 여러 보조 함수들을 사용
 
-
-2. mini project의 대략적인 기능 설명
+<dr>2. mini project의 대략적인 기능 설명
 
 [함수 종류]
 1. selectMenu (메뉴판 보여주기)
@@ -25,12 +24,12 @@ This is mini team project in OSS lecture.
 10. 추가적인 검색기능.(이름검색, 가격검색, 별점 검색)
 
 [함수정의]
-- 구조체정의
- typedef struct{
-    char name[30];
-    int cost;
-    int page;
-    int star;
+- 구조체정의  
+ typedef struct{  
+    char name[30];  
+    int cost;  
+    int page;  
+    int star;  
 } Book;
 
 1. int selectMenu();
@@ -41,11 +40,11 @@ This is mini team project in OSS lecture.
 5. int deleteBook(Book *b);
 6. void saveData(Book* b, int count);
 7. int loadData(Book* b);
-8. int selectDataNo(Book* b, int count);
-9. void searchFunction(Book* b, int count)
-   void searchName(Book* b, int count);
-   void searchPrice(Book* b, int count);
-   void searchStar(Book* b, int count);
+8. int selectDataNo(Book* b, int count);  
+9. void searchFunction(Book* b, int count);  
+   void searchName(Book* b, int count);  
+   void searchPrice(Book* b, int count);  
+   void searchStar(Book* b, int count);  
 
 [메뉴 설명]
 - 메뉴 구성
@@ -62,10 +61,11 @@ CRUD함수에 기초한 책 추가, 수정, 삭제  메뉴를 선택함으로써
 
 3. 팀소개 및 팀원이 맡은 역할
 
-[팀소개]
--팀원
-: 21800647 전예은, 21900441 연예진
--팀특징
+[팀소개]  
+
+-팀원  
+: 21800647 전예은, 21900441 연예진  
+-팀특징  
 : 속전속결!! 호흡척척!!
 
 
