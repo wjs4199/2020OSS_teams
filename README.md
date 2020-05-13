@@ -1,16 +1,15 @@
-##2020OSS_teams
+2020OSS_teams
+===
 
-Welcome, read me first:)
-This is mini team project in OSS lecture.
+Welcome, read me first:)  
+This is mini team project in OSS lecture. 
 
-
-1. mini project 주제
+<dr>1. mini project 주제
 
 - 책 판매를 위한 프로그램을 구현
 - CRUD함수와 여러 보조 함수들을 사용
 
-
-2. mini project의 대략적인 기능 설명
+<dr>2. mini project의 대략적인 기능 설명
 
 [함수 종류]
 1. selectMenu (메뉴판 보여주기)
